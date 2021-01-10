@@ -1,23 +1,22 @@
 {
   "files": {
     "main.css": "/aremores/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/aremores/static/js/main.f91affd1.chunk.js",
-    "main.js.map": "/aremores/static/js/main.f91affd1.chunk.js.map",
+    "main.js": "/aremores/static/js/main.fba7fa23.chunk.js",
+    "main.js.map": "/aremores/static/js/main.fba7fa23.chunk.js.map",
     "runtime-main.js": "/aremores/static/js/runtime-main.11e960cc.js",
     "runtime-main.js.map": "/aremores/static/js/runtime-main.11e960cc.js.map",
-    "static/js/2.8431d1e7.chunk.js": "/aremores/static/js/2.8431d1e7.chunk.js",
-    "static/js/2.8431d1e7.chunk.js.map": "/aremores/static/js/2.8431d1e7.chunk.js.map",
+    "static/js/2.9bb5c299.chunk.js": "/aremores/static/js/2.9bb5c299.chunk.js",
+    "static/js/2.9bb5c299.chunk.js.map": "/aremores/static/js/2.9bb5c299.chunk.js.map",
     "static/js/3.c676e391.chunk.js": "/aremores/static/js/3.c676e391.chunk.js",
     "static/js/3.c676e391.chunk.js.map": "/aremores/static/js/3.c676e391.chunk.js.map",
     "index.html": "/aremores/index.html",
     "static/css/main.8c8b27cf.chunk.css.map": "/aremores/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.8431d1e7.chunk.js.LICENSE.txt": "/aremores/static/js/2.8431d1e7.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/aremores/static/media/logo.6ce24c58.svg"
+    "static/js/2.9bb5c299.chunk.js.LICENSE.txt": "/aremores/static/js/2.9bb5c299.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.11e960cc.js",
-    "static/js/2.8431d1e7.chunk.js",
+    "static/js/2.9bb5c299.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.f91affd1.chunk.js"
+    "static/js/main.fba7fa23.chunk.js"
   ]
 }
