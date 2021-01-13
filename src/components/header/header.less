@@ -1,0 +1,79 @@
+@import '../../variables.less';
+
+.header-wrapper {
+
+  height: 150px;
+  background-color: @light-beige;
+  display: flex;
+
+  .header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: @light-gray;
+    margin: 20px 0;
+    border: black 1px solid;
+
+    .header-menu {
+
+      display: flex;
+      align-items: center;
+
+      .header-menu-item {
+        padding: 0 @header-menu-padding;
+
+        .header-menu-button {
+          font-size: @font-size-header-menu;
+          padding: 10px;
+          border-width: 3px;
+        }
+      }
+
+      .rc-menu-container {
+        margin-top: -65px;
+      }
+
+      &.main {
+        .header-menu-item {
+          text-align: center;
+
+          .rc-menu-button {
+            min-width: 160px;
+          }
+        }
+
+      }
+
+      &.family {
+        .header-menu-item {
+          margin-right: 20px;
+
+          .rc-menu-button {
+            min-width: 75px;
+          }
+        }
+      }
+    }
+
+    .aremores-header {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+
+      .aremores-logo {
+        padding-right: 20px;
+        padding-top: 83px;
+
+        img {
+          width: 250px;
+          height: 250px;
+          overflow: visible;
+        }
+      }
+    }
+  }
+
+}
