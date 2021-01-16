@@ -37,11 +37,5 @@ export const App = () => {
   );
 }
 
-// <button onClick={() => props.history.push('/pathName')}>Button Text</button>
-// <Link to='pathName'>Link Text</Link>
-
-// import { withRouter{ from 'react-router-dom';
-// export default withRouter(MenuItem); // <-- gives us access to history
-
 // nodemailer contact form (use env variables to protect credentials)
 // embed Google / Bing API for location map

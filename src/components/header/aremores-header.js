@@ -8,7 +8,7 @@ export const AremoresHeader = () => {
     return (
         <div className={ 'aremores-header' }>
             <HeaderMenu className={ 'family' } categories={ headerMenuFamilyCategories.menuCategoriesAll } categoriesData={ headerMenuFamilyCategories.menuCategoriesByName }/>
-            <AremoresLogo />
+            {/*<AremoresLogo />*/}
         </div>
     )
 }

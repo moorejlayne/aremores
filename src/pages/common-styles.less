@@ -1,3 +1,74 @@
+@import '../variables.less';
+
 .page {
-    padding: 0 15px;
+    padding: 30px @page-horizontal-padding;
+    display: flex;
+
+    .page-body {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 80%;
+        padding: 150px 20px 0px 20px;
+    }
+
+    .page-nav {
+        flex-grow: 1;
+        text-align: right;
+        z-index: 20;
+
+        .page-nav-wrapper {
+            position: fixed;
+            top: 0; right: 0;
+            padding-top: 10px;
+            padding-right: 10px;
+
+            .aremores-logo {
+
+                img {
+                    width: @logo-size;
+                    height: @logo-size;
+                    overflow: visible;
+                }
+            }
+
+            .page-nav-content {
+                display: flex;
+                flex-direction: column;
+
+                .page-title {
+                    font-size: @font-size-page-nav-header;
+                    align-self: center;
+                    padding-top: 10px;
+                }
+
+                .page-categories {
+
+                }
+            }
+        }
+    }
+
+
+
+
+    .primary-image {
+        .card {
+            margin-left: -@page-horizontal-padding;
+            border-radius: 0px 0.25rem 0.25rem 0px;
+            box-shadow: 1px 1px 6px @shadow-color;
+
+            img {
+                width: 100%;
+                box-shadow: 1px 1px 6px @shadow-color;
+                margin-bottom: 15px;
+            }
+
+            .card-text {
+                font-size: 20px;
+            }
+
+        }
+
+    }
+
 }
