@@ -44,9 +44,8 @@ export const HeaderMenuComponent = ({ className, categories, categoriesData, his
             )
         }
         return (
-            <div className={'header-menu-item'}>
+            <div className={'header-menu-item'} key={category}>
                 <MenuButton
-                    key={category}
                     className={'header-menu-button'}
                     onClick={() => handleClick(category)}
                 >

@@ -9,18 +9,49 @@
         flex-direction: column;
         flex-basis: 80%;
         padding: 150px 20px 0px 20px;
+
+        .section-title {
+            padding-top: 20px;
+        }
+
+        .page-content {
+            font-size: @font-size-body;
+        }
+
+        .maps {
+            display: flex;
+            min-width: calc(100% * 80% * 50%);
+            align-items: center;
+            justify-content: space-between;
+
+            .map-static,
+            .map-embed {
+                padding: 10px;
+            }
+
+            .map-static {
+                border: 1px black solid;
+                img {
+                    width: 100%;
+                    height: auto; }
+            }
+        }
+
+        .anchor {
+            padding-top: 210px;
+            margin-top: -180px;
+        }
     }
 
     .page-nav {
         flex-grow: 1;
         text-align: right;
-        z-index: 20;
+        z-index: 9000002;
 
         .page-nav-wrapper {
             position: fixed;
-            top: 0; right: 0;
-            padding-top: 10px;
-            padding-right: 10px;
+            top: 0;
+            padding-left: 15px;
 
             .aremores-logo {
 
@@ -48,10 +79,9 @@
         }
     }
 
-
-
-
     .primary-image {
+        padding-bottom: 30px;
+
         .card {
             margin-left: -@page-horizontal-padding;
             border-radius: 0px 0.25rem 0.25rem 0px;

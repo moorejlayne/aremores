@@ -6,7 +6,7 @@ export const PrimaryImage = ({ image, description }) => {
 
     return (
         <div className={'primary-image'}>
-            <Card border={'secondary'} maxWidth={'70%'}>
+            <Card border={'secondary'}>
                 <Card.Body>
                     <Card.Img variant={'bottom'} src={image} aria-hidden={true} />
                     <Card.Text>
