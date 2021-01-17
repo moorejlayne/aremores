@@ -2,6 +2,7 @@ import React from 'react';
 import './reviews.less';
 import { Carousel, Card } from 'react-bootstrap';
 import { rentalData } from '../../data/rental-data';
+import { SectionTitle } from '../section-title/section-title';
 
 export const Reviews = ({ rentalName }) => {
 
@@ -28,7 +29,7 @@ export const Reviews = ({ rentalName }) => {
 
 	return (
 		<>
-			<h3 id={'reviews'} className={'section-title anchor'}>Reviews</h3>
+			<SectionTitle id={'reviews'} title={'Reviews'}/>
 			<div className={'reviews-wrapper'}>
 				<Carousel className={'reviews'} nextIcon ={nextIcon} prevIcon={prevIcon}>
 					{

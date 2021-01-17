@@ -3,6 +3,7 @@ import '../common-styles.less'
 import pic from '../../assets/about-us-main.jpg';
 import staticMap from '../../assets/aremores-static-map.jpg';
 import { Page } from '../page-template';
+import { SectionTitle } from '../../components/section-title/section-title';
 
 export const AboutUs = () => {
 
@@ -15,7 +16,8 @@ export const AboutUs = () => {
 
     const pageContent = (
         <>
-            <p id={'history'} className={'anchor'}>
+            <SectionTitle id={'history'} title={''}/>
+            <p>
                 <strong>AREMORES, LLC</strong> is a family tree farm located in the Northwest Arkansas mountains. It is operated as a limited liability company whose members are legal descendents of Robin and Ruth Moore.
 
                 <br/><br/>
@@ -30,7 +32,7 @@ export const AboutUs = () => {
 
                 Located near Ponca, Arkansas in the upper region of the Buffalo National River, AREMORES offers two idyllic rental accommodations - primitive PINE CONE CABIN and modern PINE LODGE CABIN. Nearby recreational and sightseeing activities are outstanding.
             </p>
-            <h3 id={'location'} className={'section-title anchor'}>Location</h3>
+            <SectionTitle id={'location'} title={'Location'}/>
             <p className={'page-content aboutUs__location'}>
                 AREMORES is located in NW Arkansas, approximately 60 miles E of Fayetteville, and 10 miles SW of Compton. GPS: 36.04419, -93.41746.
             </p>

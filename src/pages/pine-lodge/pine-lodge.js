@@ -2,6 +2,7 @@ import React from 'react';
 import '../common-styles.less'
 import pic from '../../assets/pine-lodge-main.jpg';
 import { Page } from '../page-template';
+import { Reviews } from '../../components/reviews/reviews';
 
 export const PineLodge = () => {
 
@@ -11,7 +12,9 @@ export const PineLodge = () => {
         description: 'A place to gather.',
     }
 
-    const pageContent = '';
+    const pageContent = (
+        <Reviews rentalName={pageName}/>
+    );
 
     return (
         <Page
