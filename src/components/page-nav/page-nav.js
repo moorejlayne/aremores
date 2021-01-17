@@ -11,7 +11,7 @@ export const PageNav = ({page}) => {
 			<div className={'page-nav-content'}>
 				<h1 className={'page-title'}>{ page.label }</h1>
 				<ListGroup>
-					{ page.categoriesAll.map(category => {
+					{ page.categoriesAll && page.categoriesAll.map(category => {
 						const categoryData = page.categoriesByName[category];
 						return <ListGroup.Item action key={category} href={ categoryData.link }>{ categoryData.label }</ListGroup.Item>
 					})}

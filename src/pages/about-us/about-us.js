@@ -1,6 +1,6 @@
 import React from 'react';
 import '../common-styles.less'
-import pic from '../../assets/trees.jpg';
+import pic from '../../assets/about-us-main.jpg';
 import staticMap from '../../assets/aremores-static-map.jpg';
 import { Page } from '../page-template';
 
@@ -14,7 +14,7 @@ export const AboutUs = () => {
     }
 
     const pageContent = (
-        <div className={`page-content ${pageName}`}>
+        <>
             <p id={'history'} className={'anchor'}>
                 <strong>AREMORES, LLC</strong> is a family tree farm located in the Northwest Arkansas mountains. It is operated as a limited liability company whose members are legal descendents of Robin and Ruth Moore.
 
@@ -49,7 +49,7 @@ export const AboutUs = () => {
                     <li>Hwy 21 via Boxley from the south</li>
                 </ul>
             </p>
-            <div id={'location'} className={'maps'}>
+            <div className={'maps'}>
                 <div className={'map-static'}>
                     <img src={staticMap} alt={'Static map showing location of AREMORES cabin rentals'}/>
                 </div>
@@ -60,7 +60,7 @@ export const AboutUs = () => {
                         aria-hidden="false" tabIndex="0"/>
                 </div>
             </div>
-        </div>
+        </>
     )
 
     return (
