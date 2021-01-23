@@ -3,15 +3,21 @@ import './gallery.less';
 import { Modal, Card, CardColumns, Button, Carousel } from 'react-bootstrap';
 import { SectionTitle } from '../section-title/section-title';
 
-export const Gallery = ({ images }) => {
+export const Gallery = ({ images, galleryTitle }) => {
 
 	const [isModalOpen, setIsModalOpen] = React.useState(false);
+	const [activeModalIndex, setActiveModalIndex] = React.useState(0);
 
-	const imagesJsx = images.map(image => {
+	const handleModalOpen = (index) => {
+		setIsModalOpen(true)
+		setActiveModalIndex(index)
+	}
+
+	const imagesJsx = images.map((image, index) => {
 		const imageFile = image.default;
 		return (
-			<Card>
-				<Card.Img src={imageFile} alt={'imageAlt'} key={imageFile} className={''} onClick={() => setIsModalOpen(true)}/>
+			<Card key={index}>
+				<Card.Img src={imageFile} alt={'imageAlt'} className={''} onClick={() => handleModalOpen(index)}/>
 			</Card>
 		)
 	})
@@ -20,14 +26,17 @@ export const Gallery = ({ images }) => {
 		<>
 			<SectionTitle id={'gallery'} title={'Gallery'}/>
 			<div className={'gallery-wrapper'}>
-				<CardColumns>
+				<CardColumns className={'gallery'}>
 					{ imagesJsx }
 				</CardColumns>
 			</div>
 			<ModalImageGallery
 				show={isModalOpen}
-				onClose={()=> setIsModalOpen(false)}
+				onHide={()=> setIsModalOpen(false)}
 				images={images}
+				dialogClassName={'rental-modal'}
+				activeModalIndex={activeModalIndex}
+				galleryTitle={galleryTitle}
 			/>
 		</>
 	)
@@ -45,20 +54,22 @@ export const ModalImageGallery = (props) => {
 		>
 			<Modal.Header closeButton>
 				<Modal.Title id={'image-gallery'}>
-					Image Gallery
+					{ props.galleryTitle }
 				</Modal.Title>
 			</Modal.Header>
 			<Modal.Body>
-				<Carousel>
+				<Carousel interval={null} defaultActiveIndex={props.activeModalIndex}>
 					{
-						images.map(image => {
+						images.map((image, index) => {
 							return (
-								<Carousel.Item>
-									<img
-										className="d-block w-100"
-										src={`${image.default}`}
-										alt="First slide"
-									/>
+								<Carousel.Item key={index}>
+									<div className={'carousel-image-wrapper'}>
+										<img
+											className=""
+											src={`${image.default}`}
+											alt="First slide"
+										/>
+									</div>
 								</Carousel.Item>
 							)
 						})
@@ -66,7 +77,7 @@ export const ModalImageGallery = (props) => {
 				</Carousel>
 			</Modal.Body>
 			<Modal.Footer>
-				<Button onClick={props.onClose}>Close</Button>
+				<Button onClick={props.onHide}>Close</Button>
 			</Modal.Footer>
 		</Modal>
 	)

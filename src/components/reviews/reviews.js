@@ -33,9 +33,9 @@ export const Reviews = ({ rentalName }) => {
 			<div className={'reviews-wrapper'}>
 				<Carousel className={'reviews'} nextIcon ={nextIcon} prevIcon={prevIcon}>
 					{
-						Object.values(reviews).map(review => {
+						Object.values(reviews).map((review, index) => {
 							return (
-								<Carousel.Item>
+								<Carousel.Item key={index}>
 									<Card bg={'light'}>
 										{ review.review }
 									</Card>
