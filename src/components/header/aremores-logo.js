@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/logo-personal-only.png';
+import logo from '../../assets/aremores-logo.jpeg';
 
 export const AremoresLogo = () => {
 
