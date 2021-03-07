@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import { menuCategoryPaths, cabinRentalsPaths, familyPaths } from './paths';
 import { Header } from './components/header/header';
 import { AboutUs } from './pages/about-us/about-us';
@@ -21,6 +21,7 @@ export const App = () => {
    <div className={ `aremores ${ isMobile ? ' mobile ' : ''}`}>
        <Header />
        <Switch>
+           <Route exact path={ '/' } > <Redirect to='/aremores' /> </Route>
            <Route exact path={ `${menuCategoryPaths.aboutUs}` } component={ AboutUs } />
            <Route exact path={ `${cabinRentalsPaths.pineLodge}` } component={ PineLodge } />
            <Route exact path={ `${cabinRentalsPaths.pineCone}` } component={ PineCone } />
