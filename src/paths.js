@@ -1,4 +1,4 @@
-export const basePath = '';
+export const basePath = '/aremores';
 
 export const menuCategoryPaths = {
     aboutUs: `${basePath}/about`,

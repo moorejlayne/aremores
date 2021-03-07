@@ -1,5 +1,5 @@
 
-export const basePath = '';
+export const basePath = '/aremores';
 
 const rentalPage = {
 	subcategoriesData: {
