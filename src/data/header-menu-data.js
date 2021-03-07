@@ -8,8 +8,14 @@ export const headerMenuCategories = {
         rentals: {
             label: 'Cabin Rentals',
             subcategoriesByName: {
-                pineCone: 'Pine Cone',
-                pineLodge: 'Pine Lodge',
+                pineCone: {
+                    label: 'Pine Cone',
+                    hasSubcategories: true,
+                },
+                pineLodge: {
+                    label: 'Pine Lodge',
+                    hasSubcategories: true,
+                },
                 reservations: 'Reservations',
             },
             subcategoriesAll: ['pineCone', 'pineLodge', 'reservations'],
@@ -24,12 +30,6 @@ export const headerMenuCategories = {
             subcategoriesByName: {},
             subcategoriesAll: [],
         },
-    },
-    menuCategoriesAll: ['aboutUs', 'rentals', 'explore', 'contact']
-}
-
-export const headerMenuFamilyCategories = {
-    menuCategoriesByName: {
         family: {
             label: 'Family',
             subcategoriesByName: {
@@ -41,5 +41,5 @@ export const headerMenuFamilyCategories = {
             subcategoriesAll: ['heidi', 'weddingAnniversity', 'monument', 'membersLogin'],
         },
     },
-    menuCategoriesAll: ['family'],
+    menuCategoriesAll: ['aboutUs', 'rentals', 'explore', 'contact', 'family']
 }

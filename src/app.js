@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { menuPagePaths, cabinRentalsPaths, familyPaths } from './paths';
+import { menuCategoryPaths, cabinRentalsPaths, familyPaths } from './paths';
 import { Header } from './components/header/header';
 import { AboutUs } from './pages/about-us/about-us';
 import { PineLodge } from './pages/pine-lodge/pine-lodge';
@@ -19,14 +19,14 @@ import { Monument } from './pages/monument/monument';
 export const App = () => {
   return (
    <div className={ `aremores ${ isMobile ? ' mobile ' : ''}`}>
-       <Header/>
+       <Header />
        <Switch>
-           <Route exact path={ `${menuPagePaths.aboutUs}` } component={ AboutUs } />
+           <Route exact path={ `${menuCategoryPaths.aboutUs}` } component={ AboutUs } />
            <Route exact path={ `${cabinRentalsPaths.pineLodge}` } component={ PineLodge } />
            <Route exact path={ `${cabinRentalsPaths.pineCone}` } component={ PineCone } />
            <Route exact path={ `${cabinRentalsPaths.reservations}` } component={ Reservations } />
-           <Route exact path={ `${menuPagePaths.explore}` } component={ Explore } />
-           <Route exact path={ `${menuPagePaths.contact}` } component={ Contact } />
+           <Route exact path={ `${menuCategoryPaths.explore}` } component={ Explore } />
+           <Route exact path={ `${menuCategoryPaths.contact}` } component={ Contact } />
            <Route exact path={ `${familyPaths.membersLogin}` } component={ MembersLogin } />
            <Route exact path={ `${familyPaths.heidi}` } component={ Heidi } />
            <Route exact path={ `${familyPaths.weddingAnniversity}` } component={ WeddingAnniversary } />
