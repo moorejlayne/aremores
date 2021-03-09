@@ -57,6 +57,7 @@ export const AboutUs = () => {
                 </div>
                 <div className={'map-embed'}>
                     <iframe
+                        title="embedded-map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9945.082654264503!2d-93.42313328855649!3d36.04489878515588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ce97ff06d728bd%3A0xfd9b0e70fb916b55!2sAremore&#39;s%20Pine%20Cone%20%26%20Pine%20Lodge%20Cabins!5e1!3m2!1sen!2sus!4v1610833598181!5m2!1sen!2sus"
                         width="600" height="450" frameBorder="0" style={{ border: 0 }} allowFullScreen=""
                         aria-hidden="false" tabIndex="0"/>

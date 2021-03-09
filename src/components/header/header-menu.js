@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { withRouter } from 'react-router-dom'
 import { SubMenu, Menu, MenuButton, MenuItem } from '@szhsin/react-menu';
 import '@szhsin/react-menu/dist/index.css';
@@ -7,7 +7,24 @@ import menuIcon from '../../assets/menu-icon.svg';
 
 export const HeaderMenuComponent = ({ categoriesAll, categoriesData, history }) => {
 
-    const [isCollapsed, setCollapsed] = useState(true)
+    const minWidth = 1025;
+    const isMenuInitiallyCollapsed = () => {
+        return window.innerWidth <= minWidth;
+    }
+
+    const [isCollapsed, setCollapsed] = useState(isMenuInitiallyCollapsed())
+
+
+    useEffect(() => {
+        function handleResize() {
+            setCollapsed(window.innerWidth <= minWidth)
+        }
+        window.addEventListener('resize', handleResize)
+        return _ => {
+            window.removeEventListener('resize', handleResize)
+        }
+    })
+
 
     const handleClick = (category, route) => {
         history.push(route)
@@ -18,7 +35,7 @@ export const HeaderMenuComponent = ({ categoriesAll, categoriesData, history }) 
             const newRoute = `${route}${subcategoriesData[subcategory].route}`
             if (subcategoriesData[subcategory].hasSubcategories) {
                 return (
-                    <SubMenu label={ subcategoriesData[subcategory].label }>
+                    <SubMenu key={ `${subcategory}-outer` } label={ subcategoriesData[subcategory].label }>
                         {
                             getSubcategories(subcategoriesData[subcategory].subcategoriesAll, subcategoriesData[subcategory].subcategoriesData, newRoute)
                         }
@@ -28,7 +45,7 @@ export const HeaderMenuComponent = ({ categoriesAll, categoriesData, history }) 
             } else {
                 return (
                     <MenuItem
-                        key={subcategory}
+                        key={ `${subcategory}-inner` }
                         className={'subcategory-item'}
                         onClick={() => handleClick(subcategory, newRoute)}
                     >
