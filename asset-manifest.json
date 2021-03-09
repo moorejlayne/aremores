@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/aremores/static/css/main.b0301a2b.chunk.css",
-    "main.js": "/aremores/static/js/main.2a7d594e.chunk.js",
-    "main.js.map": "/aremores/static/js/main.2a7d594e.chunk.js.map",
+    "main.css": "/aremores/static/css/main.1c65be95.chunk.css",
+    "main.js": "/aremores/static/js/main.fcd25df7.chunk.js",
+    "main.js.map": "/aremores/static/js/main.fcd25df7.chunk.js.map",
     "runtime-main.js": "/aremores/static/js/runtime-main.7095a9f9.js",
     "runtime-main.js.map": "/aremores/static/js/runtime-main.7095a9f9.js.map",
     "static/css/2.21b4103d.chunk.css": "/aremores/static/css/2.21b4103d.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.15494d3e.chunk.js.map": "/aremores/static/js/3.15494d3e.chunk.js.map",
     "index.html": "/aremores/index.html",
     "static/css/2.21b4103d.chunk.css.map": "/aremores/static/css/2.21b4103d.chunk.css.map",
-    "static/css/main.b0301a2b.chunk.css.map": "/aremores/static/css/main.b0301a2b.chunk.css.map",
+    "static/css/main.1c65be95.chunk.css.map": "/aremores/static/css/main.1c65be95.chunk.css.map",
     "static/js/2.cb575d8d.chunk.js.LICENSE.txt": "/aremores/static/js/2.cb575d8d.chunk.js.LICENSE.txt",
     "static/media/about-us-main.jpg": "/aremores/static/media/about-us-main.2a638e05.jpg",
     "static/media/aremores-logo.jpeg": "/aremores/static/media/aremores-logo.8eaed6d3.jpeg",
@@ -27,7 +27,7 @@
     "static/js/runtime-main.7095a9f9.js",
     "static/css/2.21b4103d.chunk.css",
     "static/js/2.cb575d8d.chunk.js",
-    "static/css/main.b0301a2b.chunk.css",
-    "static/js/main.2a7d594e.chunk.js"
+    "static/css/main.1c65be95.chunk.css",
+    "static/js/main.fcd25df7.chunk.js"
   ]
 }
