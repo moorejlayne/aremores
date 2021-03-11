@@ -34,8 +34,16 @@ export const HeaderMenuComponent = ({ categoriesAll, categoriesData, history }) 
         return subcategoriesAll.map(subcategory => {
             const newRoute = `${route}${subcategoriesData[subcategory].route}`
             if (subcategoriesData[subcategory].hasSubcategories) {
+
+                const submenuLabel = (
+                    <>
+                        <i className="fas fa-angle-left submenu-icon"/>
+                        { subcategoriesData[subcategory].label }
+                    </>
+                )
+
                 return (
-                    <SubMenu key={ `${subcategory}-outer` } label={ subcategoriesData[subcategory].label }>
+                    <SubMenu key={ `${subcategory}-outer` } label={ submenuLabel }>
                         {
                             getSubcategories(subcategoriesData[subcategory].subcategoriesAll, subcategoriesData[subcategory].subcategoriesData, newRoute)
                         }
@@ -61,7 +69,7 @@ export const HeaderMenuComponent = ({ categoriesAll, categoriesData, history }) 
         ?   <Menu
                 key={'hamburger'}
                 arrow={true}
-                align={'center'}
+                align={'end'}
                 menuButton={
                     <div className={'hamburger-menu'}>
                         <MenuButton
@@ -82,7 +90,7 @@ export const HeaderMenuComponent = ({ categoriesAll, categoriesData, history }) 
                         <Menu
                             key={category}
                             arrow={true}
-                            align={'center'}
+                            align={'end'}
                             menuButton={
                                 <div className={'header-menu-item'}>
                                     <MenuButton

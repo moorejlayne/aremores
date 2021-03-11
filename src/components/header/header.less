@@ -1,72 +1,118 @@
 @import '../../variables.less';
 
 .header-wrapper {
-  height: @header-height-lv;
-  background-color: @header-background-color;
-  position: fixed;
-  box-shadow: 2px 0 4px @shadow-color;
-  border: 1px solid black;
-  width: 100%;
-  z-index: 9000001;
+	height: @header-height-lv;
+	background-color: @header-background-color;
+	position: fixed;
+	box-shadow: 2px 0 4px @shadow-color;
+	border: 1px solid black;
+	width: 100%;
+	z-index: 9000001;
 
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 85px;
-    background-color: @header-menu-color;
-    margin: 25px 0;
-    border: black 1px solid;
-    box-shadow: 2px 0 4px @shadow-color;
+	.header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		height: calc(@header-height-lv * 2 / 3);
+		margin: calc(@header-height-lv / 6) 0;
+		background-color: @header-menu-color;
+		border: black 1px solid;
+		box-shadow: 2px 0 4px @shadow-color;
 
-    .header-menu {
-      display: flex;
-      align-items: center;
+		.header-menu {
+			display: flex;
+			align-items: center;
 
-      .header-menu-item {
-        padding: 0 @header-menu-padding;
-        text-align: center;
+			.header-menu-item {
+				padding: 0 @header-menu-padding;
+				text-align: center;
 
-        .header-menu-button {
-          font-size: @font-size-header-menu;
-          padding: @header-button-padding;
-          border: 1px solid black;
-          box-shadow: 1px 3px 3px @shadow-color;
-        }
+				.header-menu-button {
+					font-size: @font-size-header-menu;
+					padding: @header-button-padding;
+					border: 1px solid black;
+					box-shadow: 1px 3px 3px @shadow-color;
+				}
 
-        .rc-menu-button {
-          font-weight: 500;
-          min-width: @header-button-min-width;
-        }
-      }
+				.rc-menu-button {
+					font-weight: 500;
+					min-width: @header-button-min-width;
+				}
+			}
 
-      .rc-menu-container {
-        margin-top: -65px;
-      }
+			.rc-menu-container {
+				margin-top: -65px;
 
-      .hamburger-menu {
-        padding-right: @header-menu-padding;
-      }
-    }
+				.rc-menu__submenu {
+					.rc-menu__item {
+						padding: 2px @menu-padding;
 
-    .aremores-header {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: center;
+						.submenu-icon {
+							padding-right: 5px;
+						}
+						&::after {
+							content: none;
+						}
+					}
+				}
 
-      .aremores-logo {
-        padding: @header-menu-padding;
+				.rc-menu__item.subcategory-item {
+					padding-left: calc(@menu-padding + 10px);
+				}
+			}
 
-        img {
-          height: @logo-size;
-          overflow: visible;
-          box-shadow: 1px 1px 6px @shadow-color;
-          border: 1px solid black;
-          border-radius: 4px;
-        }
-      }
-    }
-  }
+			.hamburger-menu {
+				padding-right: @header-menu-padding;
+			}
+		}
+
+		.aremores-header {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			align-items: center;
+
+			.aremores-logo {
+				padding: @header-menu-padding;
+
+				img {
+					height: @logo-size;
+					overflow: visible;
+					box-shadow: 1px 1px 6px @shadow-color;
+					border: 1px solid black;
+					border-radius: 4px;
+				}
+			}
+		}
+	}
+}
+
+.mobile {
+	.header-wrapper {
+		height: @header-height-sv;
+
+		.header {
+			height: calc(@header-height-sv * 2 / 3);
+			margin: calc(@header-height-sv / 6) 0;
+
+			.aremores-header {
+				.aremores-logo {
+					padding: @header-menu-padding-sv;
+
+					img {
+						height: @logo-size-sv;
+					}
+				}
+			}
+
+			.rc-menu {
+				min-width: 8rem;
+				.rc-menu__item {
+					font-size: 14px;
+					padding: 2px @menu-padding-sv;
+				}
+			}
+		}
+	}
 }
