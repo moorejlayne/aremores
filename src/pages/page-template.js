@@ -1,12 +1,12 @@
 import React from 'react';
-import { PrimaryImage } from '../components/images/primary-image';
+import { FeatureImage } from '../components/feature-image/feature-image';
 
-export const Page = ({ primaryImage, pageName, pageContent }) => {
+export const Page = ({ pageName, pageContent, featureImage }) => {
 	return (
 		<div className={`page-content ${pageName}`}>
+			{featureImage && <FeatureImage featureImage={ featureImage } />}
 			<div className={'page'}>
 				<div className={'page-body'}>
-					<PrimaryImage image={primaryImage.image} description={primaryImage.description}/>
 					{ pageContent }
 				</div>
 			</div>

@@ -1,0 +1,39 @@
+@asset-base-path: '../../assets/';
+
+@feature-images: explore-main, pine-cone-main;
+
+.feature-image {
+
+	display: flex;
+	align-items: center;
+	height: 600px;
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.feature-image-title {
+		font-size: 80px;
+		background-color: rgba(255, 255, 255, 0.4);
+		width: 100%;
+		text-align: center;
+	}
+
+	each(@feature-images, {
+		&.@{value} {
+			background-image: url("@{asset-base-path}/@{value}.jpg");
+		}
+	});
+}
+
+.mobile {
+	.feature-image {
+		background-attachment: scroll;
+		height: 350px;
+
+		.feature-image-title {
+			font-size: 26px;
+		}
+	}
+}

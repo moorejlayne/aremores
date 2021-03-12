@@ -33,6 +33,10 @@ export const pageDetails = {
 			label: 'About Us',
 			hasSubcategories: true,
 			route: `/about`,
+			featureImage: {
+				filename: 'about-us-main',
+				title: 'About Us',
+			},
 			subcategoriesData: {
 				history: {
 					label: 'History',
@@ -60,18 +64,30 @@ export const pageDetails = {
 				pineCone: {
 					label: 'Pine Cone',
 					route: '/pine-cone',
+					featureImage: {
+						filename: 'pine-cone-main',
+						title: 'Pine Cone Cabin Rental',
+					},
 					hasSubcategories: false,
 					...rentalPage,
 				},
 				pineLodge: {
 					label: 'Pine Lodge',
 					route: '/pine-lodge',
+					featureImage: {
+						filename: 'pine-lodge-main',
+						title: 'Pine Lodge Cabin Rental',
+					},
 					hasSubcategories: false,
 					...rentalPage,
 				},
 				reservations: {
 					label: 'Reservations',
 					route: '/reservations',
+					featureImage: {
+						filename: 'reservations-main',
+						title: 'Reservations',
+					},
 					hasSubcategories: false,
 				},
 			},
@@ -80,6 +96,10 @@ export const pageDetails = {
 		explore: {
 			label: 'Explore the Area',
 			route: '/explore',
+			featureImage: {
+				filename: 'explore-main',
+				title: 'Explore the Area',
+			},
 			hasSubcategories: false,
 		},
 		family: {
@@ -90,16 +110,28 @@ export const pageDetails = {
 				heidi: {
 					label: 'Heidi',
 					route: 'heidi',
+					featureImage: {
+						filename: 'heidi-main',
+						title: 'Heidi',
+					},
 					hasSubcategories: false,
 				},
 				weddingAnniversity: {
 					label: '50th Wedding Anniversary',
 					route: '50th-wedding-anniversary',
+					featureImage: {
+						filename: '50th-wedding-main',
+						title: '50th Wedding Anniversary',
+					},
 					hasSubcategories: false,
 				},
 				monument: {
 					label: 'Family Monument',
 					route: 'monument',
+					featureImage: {
+						filename: 'monument-main',
+						title: 'Family Monument',
+					},
 					hasSubcategories: false,
 				},
 			},

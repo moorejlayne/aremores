@@ -1,19 +1,13 @@
 import React from 'react';
 import '../common-styles.less'
-import pic from '../../assets/about-us-main.jpg';
 import staticMap from '../../assets/aremores-static-map.jpg';
 import { Page } from '../page-template';
 import { SectionTitle } from '../../components/section-title/section-title';
+import { pageDetails } from '../page-details';
 
 export const AboutUs = () => {
 
     const pageName = 'aboutUs';
-
-    const primaryImage = {
-        image: pic,
-        description: 'A forest in late autumn'
-    }
-
     const pageContent = (
         <>
             <SectionTitle id={'history'} title={''}/>
@@ -65,12 +59,13 @@ export const AboutUs = () => {
             </div>
         </>
     )
+    const featureImage = pageDetails.categoriesData[pageName].featureImage
 
     return (
         <Page
             pageName={pageName}
-            primaryImage={primaryImage}
             pageContent={pageContent}
+            featureImage={featureImage}
         />
     )
 }
