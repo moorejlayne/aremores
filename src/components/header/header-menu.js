@@ -3,7 +3,8 @@ import { withRouter } from 'react-router-dom'
 import { SubMenu, Menu, MenuButton, MenuItem } from '@szhsin/react-menu';
 import '@szhsin/react-menu/dist/index.css';
 import { basePath } from '../../pages/page-details';
-import menuIcon from '../../assets/menu-icon.svg';
+import { IoIosArrowBack } from "react-icons/io";
+import { IoMenu } from "react-icons/io5";
 
 export const HeaderMenuComponent = ({ categoriesAll, categoriesData, history }) => {
 
@@ -37,7 +38,7 @@ export const HeaderMenuComponent = ({ categoriesAll, categoriesData, history }) 
 
                 const submenuLabel = (
                     <>
-                        <i className="fas fa-angle-left submenu-icon"/>
+                        <IoIosArrowBack />
                         { subcategoriesData[subcategory].label }
                     </>
                 )
@@ -72,10 +73,8 @@ export const HeaderMenuComponent = ({ categoriesAll, categoriesData, history }) 
                 align={'end'}
                 menuButton={
                     <div className={'hamburger-menu'}>
-                        <MenuButton
-                            className={'hamburger-menu-button'}
-                        >
-                            <img src={ menuIcon } alt="Menu" />
+                        <MenuButton className={'hamburger-menu-button'}>
+                            <IoMenu />
                         </MenuButton>
                     </div>
                 }

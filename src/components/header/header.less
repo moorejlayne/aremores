@@ -48,9 +48,6 @@
 					.rc-menu__item {
 						padding: 2px @menu-padding;
 
-						.submenu-icon {
-							padding-right: 5px;
-						}
 						&::after {
 							content: none;
 						}
@@ -64,6 +61,18 @@
 
 			.hamburger-menu {
 				padding-right: @header-menu-padding;
+
+				.rc-menu-button {
+					padding: 0 5px;
+					border: 1px solid black;
+					box-shadow: 1px 3px 3px @shadow-color;
+
+					svg {
+						padding: 0;
+						height: 40px;
+						width: 40px;
+					}
+				}
 			}
 		}
 
