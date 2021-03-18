@@ -1,33 +1,32 @@
 {
   "files": {
-    "main.css": "/aremores/static/css/main.135f4fd0.chunk.css",
-    "main.js": "/aremores/static/js/main.c18ad943.chunk.js",
-    "main.js.map": "/aremores/static/js/main.c18ad943.chunk.js.map",
-    "runtime-main.js": "/aremores/static/js/runtime-main.7095a9f9.js",
-    "runtime-main.js.map": "/aremores/static/js/runtime-main.7095a9f9.js.map",
+    "main.css": "/aremores/static/css/main.64367247.chunk.css",
+    "main.js": "/aremores/static/js/main.7f26e8be.chunk.js",
+    "main.js.map": "/aremores/static/js/main.7f26e8be.chunk.js.map",
+    "runtime-main.js": "/aremores/static/js/runtime-main.5769e487.js",
+    "runtime-main.js.map": "/aremores/static/js/runtime-main.5769e487.js.map",
     "static/css/2.21b4103d.chunk.css": "/aremores/static/css/2.21b4103d.chunk.css",
-    "static/js/2.a0897302.chunk.js": "/aremores/static/js/2.a0897302.chunk.js",
-    "static/js/2.a0897302.chunk.js.map": "/aremores/static/js/2.a0897302.chunk.js.map",
-    "static/js/3.15494d3e.chunk.js": "/aremores/static/js/3.15494d3e.chunk.js",
-    "static/js/3.15494d3e.chunk.js.map": "/aremores/static/js/3.15494d3e.chunk.js.map",
+    "static/js/2.9f46e9e8.chunk.js": "/aremores/static/js/2.9f46e9e8.chunk.js",
+    "static/js/2.9f46e9e8.chunk.js.map": "/aremores/static/js/2.9f46e9e8.chunk.js.map",
+    "static/js/3.36d3f953.chunk.js": "/aremores/static/js/3.36d3f953.chunk.js",
+    "static/js/3.36d3f953.chunk.js.map": "/aremores/static/js/3.36d3f953.chunk.js.map",
     "index.html": "/aremores/index.html",
     "static/css/2.21b4103d.chunk.css.map": "/aremores/static/css/2.21b4103d.chunk.css.map",
-    "static/css/main.135f4fd0.chunk.css.map": "/aremores/static/css/main.135f4fd0.chunk.css.map",
-    "static/js/2.a0897302.chunk.js.LICENSE.txt": "/aremores/static/js/2.a0897302.chunk.js.LICENSE.txt",
+    "static/css/main.64367247.chunk.css.map": "/aremores/static/css/main.64367247.chunk.css.map",
+    "static/js/2.9f46e9e8.chunk.js.LICENSE.txt": "/aremores/static/js/2.9f46e9e8.chunk.js.LICENSE.txt",
     "static/media/about-us-main.jpg": "/aremores/static/media/about-us-main.2a638e05.jpg",
     "static/media/aremores-logo.jpeg": "/aremores/static/media/aremores-logo.8eaed6d3.jpeg",
     "static/media/aremores-static-map.jpg": "/aremores/static/media/aremores-static-map.cae96ff6.jpg",
     "static/media/explore-main.jpg": "/aremores/static/media/explore-main.53e805e4.jpg",
     "static/media/logo-personal-only.png": "/aremores/static/media/logo-personal-only.2ae99f50.png",
-    "static/media/menu-icon.svg": "/aremores/static/media/menu-icon.b778cb17.svg",
     "static/media/pine-cone-main.jpg": "/aremores/static/media/pine-cone-main.36162c8e.jpg",
     "static/media/pine-lodge-main.jpg": "/aremores/static/media/pine-lodge-main.66edb4c5.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7095a9f9.js",
+    "static/js/runtime-main.5769e487.js",
     "static/css/2.21b4103d.chunk.css",
-    "static/js/2.a0897302.chunk.js",
-    "static/css/main.135f4fd0.chunk.css",
-    "static/js/main.c18ad943.chunk.js"
+    "static/js/2.9f46e9e8.chunk.js",
+    "static/css/main.64367247.chunk.css",
+    "static/js/main.7f26e8be.chunk.js"
   ]
 }
