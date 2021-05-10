@@ -1,5 +1,13 @@
+import React from 'react';
+import { FaRegLightbulb } from 'react-icons/fa';
+import { IoWaterOutline, IoPersonOutline, IoBedOutline, IoBasketballOutline } from 'react-icons/io5';
+import { GiForkKnifeSpoon } from 'react-icons/gi';
+import { MdDirectionsWalk } from 'react-icons/md';
+import { GrRestroom } from 'react-icons/gr';
+import { ImFire } from 'react-icons/im';
+
 export const rentalData = {
-	pineLodge: {
+	pineCone: {
 		reviews: {
 			0: {
 				review: 'Thank you for letting us stay in your beautiful lodge.  It truly is a great place for family togetherness.  All the little “extras” really make the difference.  I look forward to future stays in your lodge. P.S. Love the crows\' nest!',
@@ -61,9 +69,49 @@ export const rentalData = {
 				author: '',
 				date: '',
 			},
-		}
+		},
+		amenities: [
+			{
+				label: 'Wood Fireplace (wood provided)',
+				icon: <ImFire />,
+			},
+			{
+				label: 'Double/twin bunk bed, sofa, attic floor space',
+				icon: <IoBedOutline />,
+			},
+			{
+				label: 'Outhouse (no modern plumbing',
+				icon: <GrRestroom />,
+			},
+			{
+				label: 'Max. 6 people recommended',
+				icon: <IoPersonOutline />,
+			},
+			{
+				label: 'Easy access to hiking and biking trails',
+				icon: <MdDirectionsWalk />,
+			},
+			{
+				label: 'Non-potable water for washing',
+				icon: <IoWaterOutline />,
+			}
+		],
+		excluded: [
+			{
+				label: 'Electricity',
+				icon: <FaRegLightbulb />,
+			},
+			{
+				label: 'No modern plumbing',
+				icon: <IoWaterOutline />,
+			},
+			{
+				label: 'Personal items (sleeping bag, food, utensils, etc.',
+				icon: <GiForkKnifeSpoon />,
+			}
+		]
 	},
-	pineCone: {
+	pineLodge: {
 		reviews: {
 			0: {
 				review: 'We had a great time at the cabin. It was extremely peaceful and a much needed get-a-way.  Thank you for everything.',
@@ -80,6 +128,24 @@ export const rentalData = {
 				author: '*(This family’s second weekend with their 4 young children.)',
 				date: '',
 			},
-		}
+		},
+		amenities: [
+			{
+				label: 'Max. 16 people recommended',
+				icon: <IoPersonOutline />,
+			},
+			{
+				label: 'Fire pit',
+				icon: <ImFire />,
+			},
+			{
+				label: 'Wireless internet',
+				icon: <IoBasketballOutline />,
+			},
+			{
+				label: 'Electricity',
+				icon: <FaRegLightbulb />,
+			}
+		]
 	}
 }

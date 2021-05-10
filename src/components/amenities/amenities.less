@@ -1,0 +1,27 @@
+@import '../../variables.less';
+
+.amenities-container {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: @off-white;
+	justify-content: start;
+	padding: 15px;
+
+	.amenity-card {
+		display: flex;
+		flex-direction: row;
+		width: 200px;
+		font-size: 16px;
+		padding: 10px;
+
+		.amenity-icon {
+			padding-right: 10px;
+			align-self: start;
+
+			svg {
+				height: 20px;
+				width: 20px;
+			}
+		}
+	}
+}
